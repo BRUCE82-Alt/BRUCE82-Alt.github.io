@@ -1328,8 +1328,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #000;
+  --hr-before-color: #000;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1414,7 +1414,7 @@ h6 code {
 hr {
   position: relative;
   margin: 40px auto;
-  border: 2px dashed var(--hr-border);
+  border: 0.5px solid var(--hr-border);
   width: calc(100% - 4px);
 }
 hr:hover:before {
@@ -1426,7 +1426,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '';
   font-size: 20px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
