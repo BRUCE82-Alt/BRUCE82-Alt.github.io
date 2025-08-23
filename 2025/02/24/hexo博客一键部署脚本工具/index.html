@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>hexo博客一键部署脚本工具 | JY258的博客</title><meta name="author" content="JY258,2583439861@qq.com"><meta name="copyright" content="JY258"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="由于hexo框架生成的是静态页面，因此每次上传博客都需要在git bash手动输入一次hexo clean &amp;&amp; hexo g &amp;&amp; hexo d的命令，比较麻烦。用ai写了一个AutoHotkey（一种脚本生成语言）脚本工具，该工具可以自动打开git bash并执行清理旧文件、生成静态文件、部署到服务器、一键部署（清理+生成+部署）、启动本地服务器等命令。以下为">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>hexo博客一键部署脚本工具 | JY258的博客</title><meta name="author" content="JY258,2583439861@qq.com"><meta name="copyright" content="JY258"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="由于hexo框架生成的是静态页面，因此每次上传博客都需要在git bash手动输入一次hexo clean &amp;&amp; hexo g &amp;&amp; hexo d的命令，比较麻烦。用ai写了一个AutoHotkey（一种脚本生成语言）脚本工具，该工具可以自动打开git bash并执行清理旧文件、生成静态文件、部署到服务器、一键部署（清理+生成+部署）、启动本地服务器等命令。以下为">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客一键部署脚本工具">
 <meta property="og:url" content="http://example.com/2025/02/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/index.html">
@@ -90,7 +90,7 @@
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
         }
       }
 
